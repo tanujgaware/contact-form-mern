@@ -53,7 +53,7 @@ const Form = ({contacts,setContacts}) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:3000/", formData);
+            const response = await axios.post("https://contact-form-mern-y40y.onrender.com/", formData);
             setContacts([ response.data,...contacts]);
             toast.success("Successfully Added");
             setFormData({name:"",email:"",phone:"",message:""})
