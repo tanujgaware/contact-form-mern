@@ -1,0 +1,131 @@
+.tableWrapper {
+    margin: 0.5rem auto;
+    max-width: 900px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tableWrapper h3 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.sortButtons {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.sortButtons button {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid #ddd;
+  background: #f5f6fa;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.sortButtons button:hover {
+  background: #e8eaff;
+}
+
+.tableScroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 750px;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+thead {
+    background-color: #f5f6fa;
+}
+
+th,
+td {
+    padding: 0.75rem 0.8rem;
+    text-align: left;
+}
+
+th {
+    font-weight: 600;
+    color: #333;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background-color: #f9f9ff;
+}
+
+.message {
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.deleteBtn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #ff4d4f;
+    color: white;
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    background-color: #e43c3f;
+}
+
+.empty {
+    text-align: center;
+    color: #777;
+    margin-top: 2rem;
+}
+@media (max-width: 768px) {
+    .tableWrapper {
+        padding: 1rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    .message {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .message {
+        max-width: 120px;
+    }
+
+    .sortButtons button {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.5rem;
+    }
+}
