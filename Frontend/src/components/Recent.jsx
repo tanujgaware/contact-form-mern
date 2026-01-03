@@ -26,7 +26,7 @@ const RecentlyAdded = ({ contacts, setContacts }) => {
         prev.filter(contact => contact._id !== id)
       );
 
-      await axios.delete(`http://localhost:3000/${id}`);
+      await axios.delete(`https://contact-form-mern-y40y.onrender.com/${id}`);
 
       toast.success("Contact deleted");
     } catch (err) {
