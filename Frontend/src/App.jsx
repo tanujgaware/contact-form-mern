@@ -12,7 +12,7 @@ function App() {
   }, [])
   const fetchContacts = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/");
+      const response = await axios.get("https://contact-form-mern-y40y.onrender.com/");
       // console.log(response.data);
       setContacts(response.data);
     } catch (err) {
